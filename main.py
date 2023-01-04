@@ -11,14 +11,14 @@ def even(x):
     print("your input is odd")
 '''
 '''
-#first excersise
+#excersise 1 p17
 print("|apple|banana|blueberry|pear|strawberry|")
 print(9.42 + 5.67 + 3.25 + 13.40 + (7.50)*5)
 print(len("blood-oxygenation level dependent functional magnetic resonance imaging"))
 print("apple " * 100)
 '''
 '''
-#second excersise
+#excersise 2 p21
 snack1 = "corn "
 snack2 = "chips "
 print((snack1+snack2) * 10)
@@ -28,7 +28,7 @@ snack1,snack2 = snack2,snack1
 print((snack1+snack2) * 10)
 '''
 '''
-#third excersise
+#excersise 3 p23
 prices=[8.42,5.67,3.25,13.40,7.51]
 print(min(prices),max(prices))
 help(random.randint)
@@ -38,7 +38,7 @@ price = random.choice(prices)
 print(round(price))
 '''
 '''
-#fourth excersise
+#excersise 4 p25
 spacer = " "
 def snacks(x, num):
   x=str(x)
@@ -50,13 +50,13 @@ def randchoice():
   print(random.choice(groceries))
 '''
 '''
-#fifth excersise
+#excersise 5 p26
 def snacks(x, spacer = ", ", num=100):
   x=str(x)
   print((x + spacer) * num)
 '''
 '''
-#sixth excersise
+#excersise 6 p27
 my_color=input("what is your color? ")
 other_color=input("what is another color? ")
 my_num=input("what is your number? ")
@@ -65,14 +65,14 @@ print(2+my_num)
 print("your color is: " + other_color + " the other color is: " + my_color)
 '''
 '''
-#seventh excersise
+#excersise 7 p32
 num = random.randint(0,5)
 print(num > 2)
 fruit = ["apple","pear","mango"]
 print(random.choice(fruit) == "apple")
 '''
 '''
-#eighth excersise
+#excersise 8 p33
 fruit = ["apple","pear","mango"]
 def fruitcheck(x):
   if(x in fruit):
@@ -83,7 +83,7 @@ def fruitcheck(x):
     print("your fruit is not in the list")
 '''
 '''
-#ninth excersise
+#excersise 9 p35
 snack="apple"
 snacknum=0
 while(snacknum<=10):
@@ -98,7 +98,7 @@ else:
   snacknum=0
 '''
 '''
-#tenth excersise
+#excersise 10 p38
 x=1
 for i in[1,2,3,4,5,"x","y","z"]:
   print(i, type(i))
@@ -112,3 +112,26 @@ for i in["apple","corn","tomato","cucumber","lemon"]:
 for i in str.split("blueberry pie brownie cupcake"):
   print(i)
 '''
+#excersise 11 p50
+x = 0
+a = [1,2,2,3,4,5,5,5]
+final = []
+for i in range(100):
+    if(i%3==0 or i%5==0):
+        x = x+i
+        print(i)
+a = [1,2,2,3,4,5,5,5]
+final = []
+dupes = []
+def duplicates(x):
+    print(x)
+    y=set()
+    for i in x:
+        if i not in y:
+            final.append(i)
+            y.add(i)
+        else:
+            dupes.append(i)
+    print(final)
+    print(dupes)
+duplicates(a)
