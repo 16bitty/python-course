@@ -116,10 +116,10 @@ for i in str.split("blueberry pie brownie cupcake"):
 x = 0
 a = [1,2,2,3,4,5,5,5]
 final = []
-for i in range(100):
-    if(i%3==0 or i%5==0):
-        x = x+i
-        print(i)
+#for i in range(100):
+#    if(i%3==0 or i%5==0):
+#        x = x+i
+#        print(i)
 a = [1,2,2,3,4,5,5,5]
 final = []
 dupes = []
@@ -134,4 +134,10 @@ def duplicates(x):
             dupes.append(i)
     print(final)
     print(dupes)
-duplicates(a)
+myfile = open("data.txt", "w")
+myfile.write("text addition\n second text")
+myfile.close()
+with open("data.txt") as mydata:
+    for line in mydata:
+        print(line.strip())
+        
